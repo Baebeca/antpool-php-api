@@ -33,7 +33,7 @@ class antpool {
 		unset($this->username, $this->api_key, $this->api_secret);
 	}
 
-	function get($type) {
+	function get($type, $coin) {
 		// generate api parameters
 		$nonce = time();
 		$hmac_message = $this->username.$this->api_key.$nonce;
