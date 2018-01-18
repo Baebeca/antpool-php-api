@@ -33,17 +33,20 @@ class antpool {
 		unset($this->username, $this->api_key, $this->api_secret);
 	}
 
-	function get($type) {
+	function get($type, $algo) {
 		// generate api parameters
 		$nonce = time();
 		$hmac_message = $this->username.$this->api_key.$nonce;
 		$hmac = strtoupper(hash_hmac('sha256', $hmac_message, $this->api_secret, false));
+		// Set Coin Type: BTC, LTC, ETH, ZEC
+		$coin = '';
 
 		// create curl request
 		$post_fields = array(
 			'key' => $this->api_key,
 			'nonce' => $nonce,
-			'signature' => $hmac
+			'signature' => $hmac,
+			'coin' => $coin
 		);
 
 		$post_data = '';
