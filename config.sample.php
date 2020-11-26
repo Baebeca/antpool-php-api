@@ -25,8 +25,10 @@
  **/
 
 
+
 // if you have only one antpool account than remove the array 1 (second)
 // if you have more than 2 antpool accounts than expand the array like 2,3,4
+
 class ant_config {
 
 	// antpool users settings
