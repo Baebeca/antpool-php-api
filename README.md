@@ -111,7 +111,8 @@ max 600 Request in 10min (official antpool api rules)
 
 # Contributors 
 Ryan Oliver (https://github.com/xslugx)
-Ayasd Kozanoglu (https://github.com/AysadKozanoglu)
+
+Aysad Kozanoglu (https://github.com/AysadKozanoglu)
 
 # Forks
 - Laravel PHP Facade/Antpool for the Antpool API (https://github.com/aburakovskiy/laravel-antpool-api)
