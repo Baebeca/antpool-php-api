@@ -16,7 +16,30 @@
 // we will never overrite this file
 
 ?>
-<!-- API Examples -->
+<?php
+//
+// @author              Aysad Kozanoglu
+// @email               ak@linuxhowto.net
+// @link                https://linuxhowto.net
+// @project             antpool-php-api
+// @licence             MIT licence
+//
+
+
+$jsonOutput = array (	"account" 	 => $ant->get('account'), 
+		     	"hashrate" 	 => $ant->get('hashrate'),
+			"workers" 	 => $ant->get('workers'),
+                        "paymentHistory" => $ant->get('paymentHistory'), 
+                        "poolStats" 	 => $ant->get('poolStats')
+		    );
+
+echo json_encode ($jsonOutput);
+
+die();
+
+?>
+
+<!-- Examples -->
 <pre>
 	<?php print_r($ant->get('poolStats')); ?>
 	</hr>

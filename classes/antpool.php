@@ -62,7 +62,6 @@ class antpool {
 
 
 		$ch = curl_init();
-		#curl_setopt($ch, CURLOPT_URL, 'https://maaapi.mooo.com/api/'.$type.'.htm');
 		curl_setopt($ch, CURLOPT_URL, 'https://antpool.com/api/'.$type.'.htm');
 		// todo: switch to public cert
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
