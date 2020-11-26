@@ -18,7 +18,7 @@
  * @link-github         https://github.com/AysadKozanoglu/antpool-php-api.git
  * @project             antpool-php-api
  * @license             MIT license
- * @changes             expanding the config.php and custom.php for multipool accounts configuration api calls 
+ * @changes             expanded the config.php and custom.php for multipool accounts configuration api calls 
  *                      with pretty json output
  * @example             on the cli:  $  php antpool.php | python -m json.tool
  * @screencast		see example screenshot -> screencast_cli/antpool_api_php_multipool_json_output_example.png
